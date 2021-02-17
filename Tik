@@ -32,6 +32,7 @@ try:
 						pas = ''
 					for itemm in range(length3):
 						pas += random.choice(chars3)
+					pa = pas
 				elif usser == "2":
 					s = ["1","2"]
 					ss = ["1","2"]
@@ -63,9 +64,9 @@ try:
 					length4 = int(length4)
 					for pasz in range(amountt):
 						pasz = ''
-					for itemm in range(length3):
+					for itemm in range(length4):
 						pasz = ''
-					for itemm in range(length3):
+					for itemm in range(length4):
 						pasz += random.choice(chars3)
 					pa = pas + op + pasz
 				files = pa
@@ -89,7 +90,6 @@ try:
 				else:
 					print(" {}".format(files.strip()) + " | NoT Available")
 	def s():
-		
 		headers = {
 			"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
 			"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36",
@@ -185,4 +185,5 @@ try:
 		for thread23 in threads1:
 			thread23.join()
 except:
+	print()
 	os.remove("tik.py")
